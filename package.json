@@ -1,0 +1,12 @@
+{
+  "name": "pays-indicatifs",
+  "version": "1.0.0",
+  "description": "Liste des pays et indicatifs téléphoniques",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
