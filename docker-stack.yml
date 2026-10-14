@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app:
+    image: pays-indicatifs:${TAG:-latest}
+    ports:
+      - "3000:3000"
+    deploy:
+      replicas: 3
+      update_config:
+        order: start-first
+        failure_action: rollback
+      restart_policy:
+        condition: on-failure
